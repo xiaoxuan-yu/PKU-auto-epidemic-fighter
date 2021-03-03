@@ -92,7 +92,7 @@ def main():
     else:
         desp = '战"疫"成功！'
     finally:
-        requests.post('https://sc.ftqq.com/{}.send'.format(SCKEY), data={
+        requests.post('https://sctapi.ftqq.com/{}.send'.format(SCKEY), data={
             'text': '云战"疫"填报结果 {}'.format(time.strftime("%Y/%m/%d", time.localtime())),
             'desp': desp
         })
